@@ -1,0 +1,11 @@
+{
+  "name": "ficha-controle-acucar",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd backend && npm start",
+    "dev": "cd backend && npm run dev",
+    "install:backend": "cd backend && npm install",
+    "serve:frontend": "cd docs && npx serve -l 5000"
+  }
+}
