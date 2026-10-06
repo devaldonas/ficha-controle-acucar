@@ -1,0 +1,21 @@
+# Dependências
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ambiente (NUNCA commitar)
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/

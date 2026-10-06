@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Controle do Açúcar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a3c2e">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Sua ficha de acompanhamento</h1>
+        <p>Preencha durante a aula, junto comigo!</p>
+    </header>
+
+    <div class="aviso">
+        <strong>ANTES DE COMEÇAR</strong>
+        <p>Imprima ou deixe aberta no celular</p>
+    </div>
+
+    <main class="container">
+        
+        <section class="card">
+            <h2>01. Os 4 exames que revelam a raiz</h2>
+            <p class="subtitle">Anote na aula. Deixe em branco se não tiver.</p>
+            <table class="tabela-exames">
+                <thead>
+                    <tr>
+                        <th>EXAME</th>
+                        <th>MEU VALOR</th>
+                        <th>VALOR IDEAL</th>
+                        <th>ESTOU DENTRO?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Glicemia</td>
+                        <td><input type="text" placeholder="—"></td>
+                        <td><input type="text" placeholder="—"></td>
+                        <td><select><option value="">—</option><option value="sim">Sim</option><option value="nao">Não</option></select></td>
+                    </tr>
+                    <tr>
+                        <td>Insulina</td>
+                        <td><input type="text" placeholder="—"></td>
+                        <td><input type="text" placeholder="—"></td>
+                        <td><select><option value="">—</option><option value="sim">Sim</option><option value="nao">Não</option></select></td>
+                    </tr>
+                    <tr>
+                        <td>Hemoglobina glicada</td>
+                        <td><input type="text" placeholder="—"></td>
+                        <td><input type="text" placeholder="—"></td>
+                        <td><select><option value="">—</option><option value="sim">Sim</option><option value="nao">Não</option></select></td>
+                    </tr>
+                    <tr>
+                        <td>HOMA-IR</td>
+                        <td><input type="text" placeholder="—"></td>
+                        <td><input type="text" placeholder="—"></td>
+                        <td><select><option value="">—</option><option value="sim">Sim</option><option value="nao">Não</option></select></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>02. Os sinais do seu corpo</h2>
+            <p class="subtitle">Marque tudo que você sente. Seja 100% honesto(a).</p>
+            <div class="checklist">
+                <label><input type="checkbox" value="fome"> Fome exagerada, o tempo todo</label>
+                <label><input type="checkbox" value="tonturas"> Tonturas</label>
+                <label><input type="checkbox" value="cansaco"> Cansaço e fraqueza sem motivo</label>
+                <label><input type="checkbox" value="manchas"> Manchas escuras nas dobras da pele</label>
+                <label><input type="checkbox" value="urinar"> Vontade de urinar muitas vezes</label>
+                <label><input type="checkbox" value="gordura"> Gordura na barriga aumentando</label>
+                <label><input type="checkbox" value="sede"> Sede fora do normal</label>
+                <label><input type="checkbox" value="formigamento"> Formigamento nos pés ou mãos</label>
+                <label><input type="checkbox" value="ferida"> Ferida que demora a cicatrizar</label>
+                <label><input type="checkbox" value="doce"> Vontade forte de doce ou de pão</label>
+            </div>
+            <div class="resultado-box">
+                <strong>Quantos você marcou?</strong>
+                <span id="contadorSinais">0</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>03. Meu ponto de partida</h2>
+            <p class="subtitle">Marque só o que você já tem hoje.</p>
+            <div class="checklist">
+                <label><input type="checkbox" value="insulina_jejum"> Já fiz insulina em jejum e HOMA-IR</label>
+                <label><input type="checkbox" value="vitaminas"> Já chequei níveis de vitamina D, B12, magnésio e zinco</label>
+                <label><input type="checkbox" value="plano"> Sigo um plano alimentar personalizado</label>
+                <label><input type="checkbox" value="suplementos"> Uso suplementos nas doses certas</label>
+                <label><input type="checkbox" value="doces"> Sei o que comer quando bate vontade de doce</label>
+                <label><input type="checkbox" value="açucar"> Sei exatamente o que fazer quando meu açúcar dispara</label>
+            </div>
+            <div class="resultado-box">
+                <strong>Meu ponto de partida: <span id="contadorPartida">0</span> de 6</strong>
+                <p class="small">Isso não é uma nota. É a lista do que ainda falta!</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>04. Meu compromisso</h2>
+            <p>Eu, <input type="text" id="nome" class="input-nome" placeholder="seu nome">, decido começar a tratar o problema pela raiz e, com isso, recuperar minha saúde e qualidade de vida.</p>
+            <p>Data: <input type="date" id="data" class="input-data"></p>
+            
+            <div class="assinatura">
+                <p><em>"Tenho certeza que o conteúdo desse encontro vai abrir sua mente... espero que aproveite para cuidar da sua saúde."</em></p>
+                <p><strong>Thiago Sampaio</strong><br><small>Especialista em Nutrição Clínica</small></p>
+            </div>
+        </section>
+
+        <button id="btnSalvar" class="btn-salvar">Salvar Ficha</button>
+        <p id="statusSalvo" class="status"></p>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

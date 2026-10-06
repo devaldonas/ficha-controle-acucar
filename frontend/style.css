@@ -1,0 +1,47 @@
+:root {
+    --verde-escuro: #1a3c2e;
+    --verde-claro: #e8f0ec;
+    --bege: #f9f7f2;
+    --texto: #333;
+}
+
+* { box-sizing: border-box; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+
+body { background-color: var(--bege); color: var(--texto); margin: 0; padding: 0; line-height: 1.6; }
+
+.header { background-color: var(--verde-escuro); color: #fff; padding: 20px; text-align: center; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; }
+.header h1 { margin: 0 0 5px 0; font-size: 1.5rem; }
+.header p { margin: 0; font-size: 0.9rem; opacity: 0.9; }
+
+.aviso { background-color: #fff; border: 1px solid #ddd; border-radius: 10px; margin: 15px; padding: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.aviso strong { display: block; color: var(--verde-escuro); font-size: 1.1rem; letter-spacing: 1px; margin-bottom: 5px; }
+.aviso p { margin: 0; font-size: 0.9rem; }
+
+.container { max-width: 600px; margin: 0 auto; padding: 0 15px 40px 15px; }
+
+.card { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.04); border-left: 5px solid var(--verde-escuro); }
+.card h2 { color: var(--verde-escuro); font-size: 1.2rem; margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.subtitle { font-size: 0.85rem; color: #666; font-style: italic; margin-top: -10px; margin-bottom: 15px; }
+
+.tabela-exames { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+.tabela-exames th { background-color: var(--verde-claro); color: var(--verde-escuro); padding: 8px 4px; text-align: left; font-size: 0.75rem; }
+.tabela-exames td { padding: 8px 4px; border-bottom: 1px solid #eee; }
+.tabela-exames input, .tabela-exames select { width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.8rem; }
+
+.checklist { display: flex; flex-direction: column; gap: 10px; }
+.checklist label { display: flex; align-items: center; gap: 10px; font-size: 0.95rem; cursor: pointer; padding: 8px; border-radius: 6px; transition: background 0.2s; }
+.checklist label:hover { background-color: var(--verde-claro); }
+.checklist input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--verde-escuro); cursor: pointer; }
+
+.resultado-box { background-color: var(--verde-claro); padding: 15px; border-radius: 8px; margin-top: 15px; text-align: center; color: var(--verde-escuro); }
+#contadorSinais, #contadorPartida { font-size: 1.5rem; font-weight: bold; display: block; }
+.small { font-size: 0.75rem; margin: 5px 0 0 0; font-weight: normal; }
+
+.input-nome, .input-data { border: none; border-bottom: 1px solid var(--verde-escuro); background: transparent; font-size: 1rem; padding: 5px; outline: none; width: 100%; margin: 5px 0; }
+.input-data { width: auto; }
+
+.assinatura { margin-top: 20px; text-align: center; border-top: 1px dashed #ccc; padding-top: 15px; font-size: 0.85rem; color: #555; }
+
+.btn-salvar { display: block; width: 100%; padding: 15px; background-color: var(--verde-escuro); color: #fff; border: none; border-radius: 10px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background 0.3s; margin-top: 10px; }
+.btn-salvar:hover { background-color: #2a5a46; }
+.status { text-align: center; color: var(--verde-escuro); font-weight: bold; margin-top: 10px; min-height: 20px; }

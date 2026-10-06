@@ -1,0 +1,15 @@
+{
+    "name": "Ficha de Controle do Açúcar",
+    "short_name": "Ficha Açúcar",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#f9f7f2",
+    "theme_color": "#1a3c2e",
+    "icons": [
+        {
+            "src": "https://cdn-icons-png.flaticon.com/512/2965/2965567.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
